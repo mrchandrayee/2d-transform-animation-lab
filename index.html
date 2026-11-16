@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080b14"><title>2D Transform Animation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><div class="brand"><span class="brand-mark">✦</span> CSS MOTION LAB</div><span class="top-meta">TRANSFORM PLAYGROUND</span></header>
+<main class="page">
+  <section class="hero">
+    <p class="eyebrow">CSS INTERACTIVE DEMOS</p>
+    <h1>2D Transform <span>Animation</span></h1>
+    <p>Explore how CSS transforms move, rotate, scale and reshape elements.</p>
+  </section>
+
+  <section class="demo-grid">
+    <article class="demo-card">
+      <div class="demo-label">Translate <span>01 / MOVE</span></div>
+      <div class="demo-stage"><div class="object translate" tabindex="0">Move</div></div>
+      <div class="code-panel"><pre><code>.translate:hover {
+  transform: translate(60px, -30px);
+}</code></pre><button class="copy" data-code=".translate:hover { transform: translate(60px, -30px); }">Copy CSS</button></div>
+    </article>
+
+    <article class="demo-card">
+      <div class="demo-label">Rotate <span>02 / SPIN</span></div>
+      <div class="demo-stage"><div class="object rotate" tabindex="0">Spin</div></div>
+      <div class="code-panel"><pre><code>.rotate:hover {
+  transform: rotate(360deg);
+}</code></pre><button class="copy" data-code=".rotate:hover { transform: rotate(360deg); }">Copy CSS</button></div>
+    </article>
+
+    <article class="demo-card">
+      <div class="demo-label">Scale <span>03 / ZOOM</span></div>
+      <div class="demo-stage"><div class="object scale" tabindex="0">Zoom</div></div>
+      <div class="code-panel"><pre><code>.scale:hover {
+  transform: scale(1.5);
+}</code></pre><button class="copy" data-code=".scale:hover { transform: scale(1.5); }">Copy CSS</button></div>
+    </article>
+
+    <article class="demo-card">
+      <div class="demo-label">Skew <span>04 / TILT</span></div>
+      <div class="demo-stage"><div class="object skew" tabindex="0">Tilt</div></div>
+      <div class="code-panel"><pre><code>.skew:hover {
+  transform: skew(15deg, 10deg);
+}</code></pre><button class="copy" data-code=".skew:hover { transform: skew(15deg, 10deg); }">Copy CSS</button></div>
+    </article>
+
+    <article class="demo-card">
+      <div class="demo-label">Combined <span>05 / MIX</span></div>
+      <div class="demo-stage"><div class="object combined" tabindex="0">Mix</div></div>
+      <div class="code-panel"><pre><code>.combo:hover {
+  transform: translateY(-30px)
+    rotate(15deg)
+    scale(1.2);
+}</code></pre><button class="copy" data-code=".combo:hover { transform: translateY(-30px) rotate(15deg) scale(1.2); }">Copy CSS</button></div>
+    </article>
+
+    <article class="demo-card">
+      <div class="demo-label">Auto Animation <span>06 / LOOP</span></div>
+      <div class="demo-stage"><div class="object auto">Auto</div></div>
+      <div class="code-panel"><pre><code>.auto {
+  animation: spin 3s linear infinite;
+}</code></pre><button class="copy" data-code=".auto { animation: spin 3s linear infinite; } @keyframes spin { to { transform: rotate(360deg); } }">Copy CSS</button></div>
+    </article>
+  </section>
+
+  <section class="notes">
+    <div><strong>How to use</strong><p>Hover or focus the first five squares to preview each transform. The last square rotates automatically.</p></div>
+    <button id="replay" class="replay">Replay auto animation ↻</button>
+  </section>
+  <footer><span>2D TRANSFORM ANIMATION</span><span>PURE CSS · HTML · JAVASCRIPT</span></footer>
+</main>
+<div class="toast" id="toast">CSS copied to clipboard</div>
+<script src="script.js"></script>
+</body></html>
